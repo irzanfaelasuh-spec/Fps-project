@@ -19,7 +19,7 @@ class HudOverlayView(context: Context) : LinearLayout(context) {
     init {
         orientation = VERTICAL
         setLayerType(View.LAYER_TYPE_HARDWARE, null)
-        elevation = dp(12f)
+        elevation = dp(12f).toFloat()
         clipToPadding = false
         clipChildren = false
     }
@@ -43,7 +43,7 @@ class HudOverlayView(context: Context) : LinearLayout(context) {
         val padV = (if (options.compact) 7f else 10f) * scale
         val panel = GradientDrawable().apply {
             setColor(Color.argb(235, 11, 20, 32))
-            cornerRadius = dp((if (options.compact) 11f else 15f) * scale)
+            cornerRadius = dp((if (options.compact) 11f else 15f) * scale).toFloat()
             if (options.showBorder) setStroke(dp(1f), Color.argb(145, 97, 230, 242))
         }
         background = panel
