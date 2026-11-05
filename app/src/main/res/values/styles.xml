@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.FPSPlus" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#080C14</item>
+        <item name="android:navigationBarColor">#080C14</item>
+        <item name="android:windowBackground">#080C14</item>
+        <item name="android:colorAccent">#61E6F2</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <color name="ic_launcher_background">#080C14</color>
+</resources>
